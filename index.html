@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Examen Repechaje MasterJS Gen 5">
+    <meta name="author" content="Benjamín Felipe Nilo Palacios">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/icon_phone.png">
+    <title>Examen Repechaje MasterJS Gen 5</title>
+</head>
+
+<body>
+    <div id="container" class="container">
+        <img src="./img/iphone.png" alt="Iphone" class="imagen">
+        <div class="label-num">
+            <label id="numeros"></label>
+        </div>
+        <div id="teclado" class="numbers">
+            <button id="1" class="button button2" onclick=saveNumber(this)>1</button>
+            <button id="2" class="button button2" onclick=saveNumber(this)>2</button>
+            <button id="3" class="button button2" onclick=saveNumber(this)>3</button>
+            <button id="4" class="button button2" onclick=saveNumber(this)>4</button>
+            <button id="5" class="button button2" onclick=saveNumber(this)>5</button>
+            <button id="6" class="button button2" onclick=saveNumber(this)>6</button>
+            <button id="7" class="button button2" onclick=saveNumber(this)>7</button>
+            <button id="8" class="button button2" onclick=saveNumber(this)>8</button>
+            <button id="9" class="button button2" onclick=saveNumber(this)>9</button>
+            <button id="borrar" class="button button2" onclick=deleteNumber(this) style="font-size: 23px;">⌫</button>
+            <button id="0" class="button button2" onclick=saveNumber(this)>0</button>
+            <button id="llamar" class="button button2" style="font-size: 23px;">✆</button>
+        </div>
+
+        <div id="formulario" class="formulario">
+            <form id="form">
+                <input class="input input1" type="text" id="nombre" name="nombre" placeholder="Nombre"><br>
+                <input class="input input1" type="text" id="apellido" name="apellido" placeholder="Apellido"><br>
+                <input class="input input1" type="text" id="numeroContacto" name="numeroContacto" placeholder="Teléfono"><br>
+            </form>
+            <button id="addContact" class="button button2" onclick=saveContact() style="font-size: 23px;">Agregar contacto</button>
+            <div class="label-cont">
+                <button id="eli">eliminar</button> 
+                <label id="label-cont-1"></label>               
+                <label id="label-cont-2"></label><button id="eli2" style="display: none;">eliminar</button> 
+                <label id="label-cont-3"></label><button id="eli3" style="display: none; ">eliminar</button> 
+            </div>        
+        </div>
+        <div id="divM" class="mar-cont">
+            <button id="marcar" class="button-l button2">Marcar</button>
+            <button id="contactos" class="button-l button2">Contactos</button>
+        </div>
+        <div id="colgar" class="colgar">
+            <button id="colgar" class="button-l button2">Colgar</button>
+        </div>
+    </div>
+    <script src="./js/contactos.js"></script>
+    <script src="./js/llamado.js"></script>
+</body>
+
+</html>
